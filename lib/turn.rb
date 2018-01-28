@@ -37,7 +37,7 @@ def turn(board)
   index = user_input.to_i - 1
   if valid_move?(board, index) == true
     move(board, index, token = "X")
-  elsif valid_move?(board, index) == false
+  while valid_move?(board, index) == false
     puts "Please enter another number 1-9:"
 end
 end
